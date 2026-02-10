@@ -1,0 +1,46 @@
+Пример REST API запроса:
+
+GET /api/v1/partner-stores HTTP/1.1
+Host: api.petrushka-green.com
+Accept: application/json
+Authorization: Bearer <access_token>
+
+
+Пример ответа API (JSON):
+
+{
+  "meta": {
+    "title": "Выберите магазин",
+    "description": "Партнерские магазины с доставкой"
+  },
+  "stores": [
+    {
+      "id": 1,
+      "name": "METRO",
+      "delivery_info": "Ближайшая доставка сегодня 21:00-23:00",
+      "logo_url": "https://api.petrushka-green.com/logos/metro.png",
+      "redirect_url": "https://online.metro-cc.ru"
+    },
+    {
+      "id": 2,
+      "name": "Ашан",
+      "delivery_info": "Ближайшая доставка сегодня 18:00-20:00",
+      "logo_url": "https://api.petrushka-green.com/logos/ashan.png",
+      "redirect_url": "https://www.auchan.ru"
+    },
+    {
+      "id": 3,
+      "name": "ВкусВилл",
+      "delivery_info": "Быстрая доставка от 20 до 60 минут",
+      "logo_url": "https://api.petrushka-green.com/logos/vkusvill.png",
+      "redirect_url": "https://vkusvill.ru"
+    },
+    {
+      "id": 4,
+      "name": "ВИКТОРИЯ",
+      "delivery_info": "Ближайшая доставка сегодня 17:00-19:00",
+      "logo_url": "https://api.petrushka-green.com/logos/viktoriya.png",
+      "redirect_url": "https://victoria-group.ru"
+    }
+  ]
+}
